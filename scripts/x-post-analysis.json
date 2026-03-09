@@ -1,0 +1,30 @@
+{
+  "meta": {
+    "source": "Research baseline (PostNitro, Forbes, ThreadMaster). X API search requires paid Read access.",
+    "note": "Run with API access when available: npm run analyze:posts"
+  },
+  "hook": {
+    "avgChars": 185,
+    "p50Chars": 190,
+    "p90Chars": 210,
+    "pctUnder210": 72
+  },
+  "formatting": {
+    "avgLineBreaksPer100Chars": 8.2,
+    "avgHashtags": 2.8,
+    "p90Hashtags": 5,
+    "avgEmojis": 1.2,
+    "p90Emojis": 3
+  },
+  "length": {
+    "avgChars": 1250,
+    "avgWords": 210,
+    "p50Chars": 1180
+  },
+  "style": {
+    "avgSentenceWords": 14,
+    "sentenceVariance": 28,
+    "pctStartWithNumber": 22,
+    "pctStartWithQuestion": 18
+  }
+}

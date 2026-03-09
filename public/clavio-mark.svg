@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Clavio logo mark</title>
+  <desc id="desc">A blue dot and an angled rounded bar.</desc>
+  <circle cx="312" cy="430" r="112" fill="#2D2BFF" />
+  <rect x="442" y="196" width="256" height="700" rx="128" fill="#2D2BFF" transform="rotate(31 570 546)" />
+</svg>
