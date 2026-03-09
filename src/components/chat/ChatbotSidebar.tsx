@@ -119,21 +119,20 @@ export function ChatbotSidebar() {
         <div ref={scrollRef} className="flex-1 overflow-y-auto p-4">
           {messages.length === 0 ? (
             <div className="space-y-3">
-              <p className="text-sm text-neutral-500">Ask for help with hashtags, keywords, audience, or content tips.</p>
-              <div className="space-y-2">
+              <div className="flex flex-wrap gap-2">
                 {QUICK_PROMPTS.map((prompt) => (
                   <button
                     key={prompt}
                     type="button"
                     onClick={() => sendMessage(prompt)}
-                    className="w-full rounded-lg border border-neutral-200 bg-neutral-50 px-3 py-2 text-left text-xs text-neutral-600 transition hover:border-neutral-300 hover:bg-neutral-100"
+                    className="rounded-full bg-neutral-100 px-3 py-1.5 text-xs text-neutral-600 transition-colors hover:bg-neutral-200"
                   >
                     {prompt}
                   </button>
                 ))}
               </div>
               {keywords.length > 0 && (
-                <p className="text-xs text-neutral-400">I&apos;ll use your keywords ({keywords.join(', ')}) as context.</p>
+                <p className="text-xs text-neutral-400">Using your keywords: {keywords.join(', ')}</p>
               )}
             </div>
           ) : (
